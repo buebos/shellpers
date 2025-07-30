@@ -5,7 +5,7 @@ dir="key"
 key_filename="github"
 config_filename="github-ssh.config"
 
-config_content="Host github.com\n\tHostName github.com\n\tPort 22\n\tUser git\n\tIdentityFile $dir/$key_filename"
+config_content="Host github.com\n\tHostName github.com\n\tPort 22\n\tUser git\n\tIdentityFile $dir/$key_filename\n\tIdentitiesOnly yes\n"
 
 printf "[INPUT]: Type your GitHub-linked email address: "
 read -r email
